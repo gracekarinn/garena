@@ -1,3 +1,49 @@
-[gd_scene format=3 uid="uid://by5c7jbvjbfvo"]
+[gd_scene load_steps=6 format=3 uid="uid://by5c7jbvjbfvo"]
+
+[ext_resource type="Texture2D" uid="uid://c4svhk6r2piok" path="res://assets/button/yes.png" id="1_1x1wr"]
+[ext_resource type="Texture2D" uid="uid://b3x5xnqva7g7r" path="res://assets/level-one/BG.png" id="1_txgjk"]
+[ext_resource type="Texture2D" uid="uid://dmvvuyuma1kpk" path="res://assets/level-one/FG wo laptop.png" id="2_4n6qd"]
+[ext_resource type="Texture2D" uid="uid://bybgkjc5cuoth" path="res://assets/button/no.png" id="2_6gpym"]
+[ext_resource type="Texture2D" uid="uid://cgxaokew5c44b" path="res://assets/level-one/IMG_2439.png" id="2_bdgtu"]
 
 [node name="DayOne" type="ReferenceRect"]
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+offset_right = 1280.0
+offset_bottom = 800.0
+texture = ExtResource("1_txgjk")
+
+[node name="Sprite" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 342.0
+offset_top = -118.0
+offset_right = 976.0
+offset_bottom = 516.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_bdgtu")
+expand_mode = 1
+
+[node name="Meja" type="TextureRect" parent="."]
+layout_mode = 1
+offset_right = 1280.0
+offset_bottom = 800.0
+texture = ExtResource("2_4n6qd")
+
+[node name="YesButton" type="TextureButton" parent="."]
+visible = false
+layout_mode = 1
+offset_right = 1280.0
+offset_bottom = 800.0
+texture_normal = ExtResource("1_1x1wr")
+
+[node name="NoButton" type="TextureButton" parent="."]
+visible = false
+layout_mode = 1
+offset_right = 1280.0
+offset_bottom = 800.0
+texture_normal = ExtResource("2_6gpym")

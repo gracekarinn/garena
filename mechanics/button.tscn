@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b171pf3fhb0da"]
+
+[ext_resource type="Texture2D" uid="uid://c4svhk6r2piok" path="res://assets/button/yes.png" id="1_fs3hs"]
+
+[node name="Button" type="TextureButton"]
+offset_right = 8.0
+offset_bottom = 8.0
+texture_normal = ExtResource("1_fs3hs")

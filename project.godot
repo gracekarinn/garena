@@ -22,6 +22,12 @@ buses/default_bus_layout="res://levels/settings/default_bus_layout.tres"
 
 TransitionScreen="*res://levels/transition/transition_screen.tscn"
 
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=800
+window/stretch/mode="canvas_items"
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
