@@ -1,0 +1,64 @@
+{
+  "records": [
+	{
+	  "id": "C001",
+	  "medical_record": "Allergic to shellfish; had minor knee surgery in 2020.",
+	  "scandal": "Forged recommendation letters for a past audition.",
+	  "crime": "No criminal record."
+	},
+	{
+	  "id": "C002",
+	  "medical_record": "Mild seasonal allergies.",
+	  "scandal": "Filed multiple HR complaints at previous job; rumored workplace conflicts.",
+	  "crime": "No criminal record."
+	},
+	{
+	  "id": "C003",
+	  "medical_record": "Occasional back pain; physical therapy sessions in 2021.",
+	  "scandal": "Accused of causing on-set drama by demanding special treatment.",
+	  "crime": "No criminal record."
+	},
+	{
+	  "id": "C004",
+	  "medical_record": "Stomach ulcer diagnosed in 2019; takes medication regularly.",
+	  "scandal": "Rumored affair with a co-star during filming.",
+	  "crime": "No criminal record."
+	},
+	{
+	  "id": "C005",
+	  "medical_record": "No notable medical issues on file.",
+	  "scandal": "Disqualified from a directing competition for rule violations.",
+	  "crime": "Unpaid parking tickets in 2022."
+	},
+	{
+	  "id": "C006",
+	  "medical_record": "Had vocal cord strain in 2020; advised to rest voice occasionally.",
+	  "scandal": "Caught lip-syncing during a supposedly live musical performance.",
+	  "crime": "Petty theft conviction as a teenager (sealed juvenile record)."
+	},
+	{
+	  "id": "C007",
+	  "medical_record": "Prescribed medication for anxiety management.",
+	  "scandal": "Allegedly cheated on a partner with a co-actor; tabloid coverage in 2020.",
+	  "crime": "No criminal record."
+	},
+	{
+	  "id": "C008",
+	  "medical_record": "Broken wrist in 2018; fully recovered but recommended wrist support for stunts.",
+	  "scandal": "Suspected of doping to stay awake for overnight shoots.",
+	  "crime": "No criminal record."
+	},
+	{
+	  "id": "C009",
+	  "medical_record": "Suffers from chronic migraines; on prescription medication.",
+	  "scandal": "Accused of plagiarizing a rival's script ideas; case settled out of court.",
+	  "crime": "Arrested once for trespassing on private property during a film project."
+	},
+	{
+	  "id": "C010",
+	  "medical_record": "Underwent physical therapy for a shoulder injury in 2019.",
+	  "scandal": "Rumored romantic involvement with a famous influencer while in another relationship.",
+	  "crime": "Fined for public disturbance at a protest in 2021."
+	}
+  ]
+}

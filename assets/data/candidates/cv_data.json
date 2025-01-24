@@ -1,0 +1,242 @@
+{
+	"candidates": [
+	  {
+		"id": "C001",
+		"name": "Valentino Fernandez",
+		"photo": "res://assets/candidates/photos/valentino_fernandez.png",
+		"experience": [
+		  {
+			"role": "Actor",
+			"genre": "Horror",
+			"years": "2016-2017",
+			"description": "I played the role of a ghost in the production of 'The Haunting'."
+		  },
+		  {
+			"role": "Actor",
+			"genre": "Horror",
+			"years": "2021-2022",
+			"description": "I played the role of a zombie in the production of 'The Walking Dead'."
+		  }
+		],
+		"funfact": [
+		  "I can communicate well with others",
+		  "I am a fast learner",
+		  "I am a team player",
+		  "I am a hard worker"
+		]
+	  },
+	  {
+		"id": "C002",
+		"name": "Wida Prasetyo",
+		"photo": "res://assets/candidates/photos/wida_prasetyo.png",
+		"experience": [
+		  {
+			"role": "Actor",
+			"genre": "Romance",
+			"years": "2022-2023",
+			"description": "I played the role of a lover in the production of 'The Notebook'."
+		  },
+		  {
+			"role": "Actor",
+			"genre": "Comedy",
+			"years": "2023-2024",
+			"description": "I played the role of a clown in the production of 'The Joker'."
+		  }
+		],
+		"funfact": [
+		  "I can communicate well with others",
+		  "I am a fast learner",
+		  "I cannot_adapt"
+		]
+	  },
+	  {
+		"id": "C003",
+		"name": "Dewi Hartono",
+		"photo": "res://assets/candidates/photos/dewi_hartono.png",
+		"experience": [
+		  {
+			"role": "Actor",
+			"genre": "Action",
+			"years": "2019-2020",
+			"description": "I performed stunts and combat scenes in 'Fast Pursuit'."
+		  }
+		],
+		"funfact": [
+		  "Enjoys extreme sports",
+		  "Trained in martial arts",
+		  "I am lack of romance experience"
+		]
+	  },
+	  {
+		"id": "C004",
+		"name": "Bayu Setiadi",
+		"photo": "res://assets/candidates/photos/bayu_setiadi.png",
+		"experience": [
+		  {
+			"role": "Actor",
+			"genre": "Drama",
+			"years": "2018-2019",
+			"description": "Portrayed a troubled teen in 'Broken Dreams'."
+		  },
+		  {
+			"role": "Extra",
+			"genre": "Horror",
+			"years": "2021",
+			"description": "Brief cameo as a ghostly figure in 'Night Shadows'."
+		  }
+		],
+		"funfact": [
+		  "Likes improvising lines",
+		  "Tries method acting occasionally",
+		  "Avid reader of mystery novels"
+		]
+	  },
+	  {
+		"id": "C005",
+		"name": "Ayu Kartika",
+		"photo": "res://assets/candidates/photos/ayu_kartika.png",
+		"experience": [
+		  {
+			"role": "Director",
+			"genre": "Comedy",
+			"years": "2020-2021",
+			"description": "Directed a short comedy film that won a local festival."
+		  }
+		],
+		"funfact": [
+		  "Studied in a prestigious film school",
+		  "Enjoys painting landscapes",
+		  "Collects vintage cameras",
+		  "I used to be a part of a theater group and performed in several plays about romance."
+		]
+	  },
+	  {
+		"id": "C006",
+		"name": "Rangga Wijaya",
+		"photo": "res://assets/candidates/photos/wida_prasetyo.png",
+		"experience": [
+		  {
+			"role": "Actor",
+			"genre": "Musical",
+			"years": "2021-2022",
+			"description": "Performed singing and dancing roles in 'Broadway Nights'."
+		  },
+		  {
+			"role": "Backup Singer",
+			"genre": "Pop",
+			"years": "2022-2023",
+			"description": "Toured as a backup vocalist for a pop star."
+		  },
+			{
+				"role": "Actor",
+				"genre": "Romance",
+				"years": "2023-2024",
+				"description": "Played a romantic lead in a TV series."
+			}
+		],
+		"funfact": [
+		  "Skilled guitarist",
+		  "Won a local singing competition",
+		  "Loves karaoke"
+		]
+	  },
+	  {
+		"id": "C007",
+		"name": "Sari Putri",
+		"photo": "res://assets/candidates/photos/sari_putri.png",
+		"experience": [
+		  {
+			"role": "Actor",
+			"genre": "Romance",
+			"years": "2015-2016",
+			"description": "Starred in a popular TV romance drama."
+		  },
+		  {
+			"role": "Actor",
+			"genre": "Thriller",
+			"years": "2018-2019",
+			"description": "Played a detective in the mystery film 'Nightfall'."
+		  }
+		],
+		"funfact": [
+		  "Enjoys solving puzzles",
+		  "Watches classic black-and-white films",
+		  "Gives motivational talks",
+		  "I am a fast learner"
+		]
+	},
+	  {
+		"id": "C008",
+		"name": "Firman Yusuf",
+		"photo": "res://assets/candidates/photos/firman_yusuf.png",
+		"experience": [
+		  {
+			"role": "Screenwriter",
+			"genre": "Comedy",
+			"years": "2020-2021",
+			"description": "Wrote comedic skits for a variety show."
+		  },
+		  {
+			"role": "Producer",
+			"genre": "Documentary",
+			"years": "2022",
+			"description": "Produced a documentary on local wildlife conservation."
+		  }
+		],
+		"funfact": [
+		  "Passionate about wildlife",
+		  "Loves stand-up comedy",
+		  "Obsessed with coffee brewing"
+		]
+	  },
+	  {
+		"id": "C009",
+		"name": "Diana Kusumo",
+		"photo": "res://assets/candidates/photos/diana_kusumo.png",
+		"experience": [
+			{
+				"role": "Actor",
+				"genre": "Romance",
+				"years": "2019-2020",
+				"description": "Played a romantic lead in a TV series."
+			},
+			{
+				"role": "Actor",
+				"genre": "Drama",
+				"years": "2021-2022",
+				"description": "Portrayed a grieving widow in 'Tears of the Heart'."
+			}
+		],
+		"funfact": [
+		  "Loves costume designing",
+		  "Enjoys mixing soundtracks",
+		  "Collects horror movie props",
+		  "I am a fast learner"
+		]
+	  },
+	  {
+		"id": "C010",
+		"name": "Rizky Maulana",
+		"photo": "res://assets/candidates/photos/rizky_maulana.png",
+		"experience": [
+		  {
+			"role": "Actor",
+			"genre": "Romance",
+			"years": "2017-2018",
+			"description": "Played a romantic lead in a movie."
+		  },
+		  {
+			"role": "Actor",
+			"genre": "Romance",
+			"years": "2019-2020",
+			"description": "I played the role of a hopeless romantic in the production of 'Love Story'."
+		  }
+		],
+		"funfact": [
+		  "Gym enthusiast",
+		  "Enjoys hiking on weekends",
+		  "Studying parkour"
+		]
+	  }
+	]
+  }
