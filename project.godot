@@ -21,6 +21,7 @@ buses/default_bus_layout="res://levels/settings/default_bus_layout.tres"
 [autoload]
 
 TransitionScreen="*res://levels/transition/transition_screen.tscn"
+TransitionView="*res://levels/transition/transition_view.tscn"
 
 [display]
 
