@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://d043mnudjtxs6"]
 
 [ext_resource type="FontFile" uid="uid://cv3umsy8a02sh" path="res://assets/fonts/GrapeSoda.ttf" id="1_0v31n"]
-[ext_resource type="Script" path="res://levels/main_menu.gd" id="1_nvjhl"]
+[ext_resource type="Script" path="res://levels/menu/main_menu.gd" id="1_nvjhl"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nmbe2"]
 
