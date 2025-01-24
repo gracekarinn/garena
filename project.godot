@@ -13,11 +13,14 @@ config_version=5
 config/name="gelitik-garena"
 run/main_scene="res://levels/menu/main_menu.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
-config/icon="res://assets/icon.svg"
 
 [audio]
 
 buses/default_bus_layout="res://levels/settings/default_bus_layout.tres"
+
+[autoload]
+
+TransitionScreen="*res://levels/transition/transition_screen.tscn"
 
 [rendering]
 

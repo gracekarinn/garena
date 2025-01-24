@@ -3,7 +3,6 @@ extends Node
 class_name CVParser
 
 const CV_PATH = "res://assets/data/candidates/candidates.json"
-
 var cv_data: Dictionary = {}
 
 func _ready():
@@ -30,3 +29,11 @@ func get_candidate_name(id: String) -> String:
 func get_candidate_photo(id: String) -> String:
 	var cv = get_cv(id)
 	return cv.get("photo", "")
+
+func get_experience(id: String) -> Array:
+	var cv = get_cv(id)
+	return cv.get("experience", [])
+
+func get_funfact(id: String) -> Array:
+	var cv = get_cv(id)
+	return cv.get("funfact", [])
