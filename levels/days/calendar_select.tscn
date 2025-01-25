@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://dfa7mejpnycrm"]
+[gd_scene load_steps=3 format=3 uid="uid://dfa7mejpnycrm"]
 
 [ext_resource type="FontFile" uid="uid://cv3umsy8a02sh" path="res://assets/fonts/GrapeSoda.ttf" id="1_qsow3"]
+[ext_resource type="AudioStream" uid="uid://dyt6uhtnqcpwm" path="res://assets/music/GARENA_Man_On_The_Inside.mp3" id="2_xyapm"]
 
 [node name="CalendarSelect" type="Control"]
 layout_mode = 3
@@ -83,3 +84,7 @@ text = "Sat"
 [node name="Sun" type="Label" parent="Panel/MarginContainer/VBoxContainer/DaysOfWeekContainer"]
 layout_mode = 2
 text = "Sun"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_xyapm")
+autoplay = true

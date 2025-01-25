@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://cp6a12l546ynx"]
+[gd_scene load_steps=11 format=3 uid="uid://cp6a12l546ynx"]
 
 [ext_resource type="Texture2D" uid="uid://b3x5xnqva7g7r" path="res://assets/level-one/BG.png" id="1_mpwej"]
 [ext_resource type="Texture2D" uid="uid://bkx2olw0egdba" path="res://assets/level-two/FG.png" id="2_ej7ob"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cq7gja1v3ir0m" path="res://assets/button/yes.png" id="5_ppr5g"]
 [ext_resource type="Texture2D" uid="uid://b653vn6yecj85" path="res://assets/button/no.png" id="6_5npdm"]
 [ext_resource type="FontFile" uid="uid://cqt08qvej7fiw" path="res://assets/fonts/OCRAEXT.TTF" id="7_xs1gn"]
+[ext_resource type="AudioStream" uid="uid://dyt6uhtnqcpwm" path="res://assets/music/GARENA_Man_On_The_Inside.mp3" id="8_43l0u"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d8shb"]
 content_margin_left = 0.0
@@ -43,6 +44,7 @@ offset_bottom = 40.0
 
 [node name="YesButton" type="TextureButton" parent="."]
 z_index = 5
+layout_mode = 0
 offset_left = 971.0
 offset_top = 488.0
 offset_right = 1251.0
@@ -54,6 +56,7 @@ stretch_mode = 0
 
 [node name="NoButton" type="TextureButton" parent="."]
 z_index = 5
+layout_mode = 0
 offset_left = 700.0
 offset_top = 488.0
 offset_right = 980.0
@@ -64,6 +67,7 @@ ignore_texture_size = true
 stretch_mode = 0
 
 [node name="CVBackground" type="TextureRect" parent="."]
+layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 mouse_filter = 2
@@ -103,3 +107,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("7_xs1gn")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_uy3lf")
 scroll_fit_content_height = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_43l0u")
+autoplay = true
