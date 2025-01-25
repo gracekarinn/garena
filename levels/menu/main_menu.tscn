@@ -20,7 +20,7 @@ corner_radius_bottom_left = 16
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_f0dmv"]
 shader = ExtResource("3_q3s7e")
-shader_parameter/SPEED = 0.5
+shader_parameter/SPEED = 0.1
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
