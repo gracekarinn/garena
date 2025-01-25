@@ -81,17 +81,17 @@ func display_cv(id: String):
 
 func _on_yes_button_pressed():
 	print("YES pressed!")
-	if current_candidate_id == "C005":
-		current_candidate_id = "C001"
-	else:
-
-		current_candidate_id = "C00" + str(int(current_candidate_id.substr(3)) + 1)
-	display_cv(current_candidate_id)
+	GameState.record_choice(current_candidate_id, true)
+	advance_to_next_candidate()
 
 func _on_no_button_pressed():
 	print("NO pressed!")
-	if current_candidate_id == "C005":
-		current_candidate_id = "C001"
+	GameState.record_choice(current_candidate_id, false)
+	advance_to_next_candidate()
+
+func advance_to_next_candidate():
+	if current_candidate_id == cv_parser.get_all_cvs().back().id:
+		get_tree().change_scene_to_file("res://levels/day-one/youtube_view.tscn")
 	else:
 		current_candidate_id = "C00" + str(int(current_candidate_id.substr(3)) + 1)
-	display_cv(current_candidate_id)
+		display_cv(current_candidate_id)
