@@ -1,10 +1,10 @@
 [gd_scene load_steps=12 format=3 uid="uid://by5c7jbvjbfvo"]
 
-[ext_resource type="Texture2D" uid="uid://c4svhk6r2piok" path="res://assets/button/yes.png" id="1_1x1wr"]
+[ext_resource type="Texture2D" uid="uid://cq7gja1v3ir0m" path="res://assets/button/yes.png" id="1_1x1wr"]
 [ext_resource type="Script" path="res://levels/day-one/day_one.gd" id="1_24mqf"]
 [ext_resource type="Texture2D" uid="uid://b3x5xnqva7g7r" path="res://assets/level-one/BG.png" id="1_txgjk"]
 [ext_resource type="Texture2D" uid="uid://dmvvuyuma1kpk" path="res://assets/level-one/FG wo laptop.png" id="2_4n6qd"]
-[ext_resource type="Texture2D" uid="uid://bybgkjc5cuoth" path="res://assets/button/no.png" id="2_6gpym"]
+[ext_resource type="Texture2D" uid="uid://b653vn6yecj85" path="res://assets/button/no.png" id="2_6gpym"]
 [ext_resource type="Texture2D" uid="uid://cgxaokew5c44b" path="res://assets/level-one/IMG_2439.png" id="2_bdgtu"]
 [ext_resource type="Script" path="res://scripts/data/cv_parser.gd" id="2_gplpa"]
 [ext_resource type="Texture2D" uid="uid://dupcowoqhxurt" path="res://assets/level-one/CV.png" id="7_q2vtw"]
@@ -21,13 +21,12 @@ content_margin_bottom = 0.0
 [node name="DayOne" type="ReferenceRect"]
 script = ExtResource("1_24mqf")
 
-[node name="CVParser" type="Node" parent="."]
-script = ExtResource("2_gplpa")
-
 [node name="Background" type="TextureRect" parent="."]
+z_index = -1
 layout_mode = 1
 offset_right = 1280.0
 offset_bottom = 800.0
+mouse_filter = 2
 texture = ExtResource("1_txgjk")
 
 [node name="Sprite" type="TextureRect" parent="."]
@@ -41,31 +40,23 @@ offset_right = 976.0
 offset_bottom = 516.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("2_bdgtu")
 expand_mode = 1
 
 [node name="Meja" type="TextureRect" parent="."]
+z_index = -1
 layout_mode = 1
 offset_right = 1280.0
 offset_bottom = 800.0
+mouse_filter = 2
 texture = ExtResource("2_4n6qd")
-
-[node name="YesButton" type="TextureButton" parent="."]
-layout_mode = 1
-offset_right = 1280.0
-offset_bottom = 800.0
-texture_normal = ExtResource("1_1x1wr")
-
-[node name="NoButton" type="TextureButton" parent="."]
-layout_mode = 1
-offset_right = 1280.0
-offset_bottom = 800.0
-texture_normal = ExtResource("2_6gpym")
 
 [node name="CVBackground" type="TextureRect" parent="."]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
+mouse_filter = 2
 texture = ExtResource("7_q2vtw")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CVBackground"]
@@ -74,6 +65,7 @@ offset_left = 201.0
 offset_top = 267.0
 offset_right = 670.0
 offset_bottom = 776.0
+mouse_filter = 2
 theme_override_constants/separation = 14
 
 [node name="NameLabel" type="Label" parent="CVBackground/VBoxContainer"]
@@ -84,6 +76,7 @@ theme_override_fonts/font = ExtResource("9_prh1u")
 [node name="ExperienceLabel" type="TextEdit" parent="CVBackground/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
+mouse_filter = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("9_prh1u")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_qgxia")
@@ -95,10 +88,38 @@ scroll_fit_content_height = true
 [node name="FunfactLabel" type="TextEdit" parent="CVBackground/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
+mouse_filter = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("9_prh1u")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_55ykc")
 scroll_fit_content_height = true
+
+[node name="CVParser" type="Node" parent="."]
+script = ExtResource("2_gplpa")
+
+[node name="YesButton" type="TextureButton" parent="."]
+z_index = 5
+layout_mode = 0
+offset_left = 971.0
+offset_top = 488.0
+offset_right = 1251.0
+offset_bottom = 768.0
+mouse_filter = 1
+texture_normal = ExtResource("1_1x1wr")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="NoButton" type="TextureButton" parent="."]
+z_index = 5
+layout_mode = 0
+offset_left = 700.0
+offset_top = 488.0
+offset_right = 980.0
+offset_bottom = 768.0
+mouse_filter = 1
+texture_normal = ExtResource("2_6gpym")
+ignore_texture_size = true
+stretch_mode = 0
 
 [connection signal="pressed" from="YesButton" to="." method="_on_yes_button_pressed"]
 [connection signal="pressed" from="NoButton" to="." method="_on_no_button_pressed"]
