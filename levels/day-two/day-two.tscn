@@ -1,8 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://cp6a12l546ynx"]
+[gd_scene load_steps=12 format=3 uid="uid://cp6a12l546ynx"]
 
 [ext_resource type="Texture2D" uid="uid://b3x5xnqva7g7r" path="res://assets/level-one/BG.png" id="1_mpwej"]
+[ext_resource type="Script" path="res://levels/day-two/day_two.gd" id="1_utwlj"]
 [ext_resource type="Texture2D" uid="uid://bkx2olw0egdba" path="res://assets/level-two/FG.png" id="2_ej7ob"]
 [ext_resource type="Texture2D" uid="uid://ycaeh7yx3stc" path="res://assets/level-two/laptop view pilih.png" id="3_f2dtc"]
+[ext_resource type="Texture2D" uid="uid://cc18xy06fikgv" path="res://assets/candidates/Aaron fine.png" id="3_vidcx"]
 [ext_resource type="Texture2D" uid="uid://dupcowoqhxurt" path="res://assets/level-one/CV.png" id="4_svtn8"]
 [ext_resource type="Texture2D" uid="uid://cq7gja1v3ir0m" path="res://assets/button/yes.png" id="5_ppr5g"]
 [ext_resource type="Texture2D" uid="uid://b653vn6yecj85" path="res://assets/button/no.png" id="6_5npdm"]
@@ -17,12 +19,22 @@ content_margin_bottom = 0.0
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uy3lf"]
 
 [node name="Day-two" type="ReferenceRect"]
+script = ExtResource("1_utwlj")
 
 [node name="Background" type="TextureRect" parent="."]
 layout_mode = 1
 offset_right = 1280.0
 offset_bottom = 800.0
 texture = ExtResource("1_mpwej")
+
+[node name="Avatar" type="TextureRect" parent="."]
+layout_mode = 1
+offset_left = 359.0
+offset_top = -22.0
+offset_right = 954.0
+offset_bottom = 514.0
+texture = ExtResource("3_vidcx")
+expand_mode = 1
 
 [node name="Meja" type="TextureRect" parent="."]
 layout_mode = 0
@@ -36,36 +48,10 @@ offset_right = 1280.0
 offset_bottom = 800.0
 texture = ExtResource("3_f2dtc")
 
-[node name="Avatar" type="TextureRect" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="YesButton" type="TextureButton" parent="."]
-z_index = 5
-offset_left = 971.0
-offset_top = 488.0
-offset_right = 1251.0
-offset_bottom = 768.0
-mouse_filter = 1
-texture_normal = ExtResource("5_ppr5g")
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="NoButton" type="TextureButton" parent="."]
-z_index = 5
-offset_left = 700.0
-offset_top = 488.0
-offset_right = 980.0
-offset_bottom = 768.0
-mouse_filter = 1
-texture_normal = ExtResource("6_5npdm")
-ignore_texture_size = true
-stretch_mode = 0
-
 [node name="CVBackground" type="TextureRect" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 800.0
 mouse_filter = 2
 texture = ExtResource("4_svtn8")
 
@@ -103,3 +89,30 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("7_xs1gn")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_uy3lf")
 scroll_fit_content_height = true
+
+[node name="YesButton" type="TextureButton" parent="."]
+z_index = 5
+layout_mode = 0
+offset_left = 971.0
+offset_top = 488.0
+offset_right = 1251.0
+offset_bottom = 768.0
+mouse_filter = 1
+texture_normal = ExtResource("5_ppr5g")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="NoButton" type="TextureButton" parent="."]
+z_index = 5
+layout_mode = 0
+offset_left = 700.0
+offset_top = 488.0
+offset_right = 980.0
+offset_bottom = 768.0
+mouse_filter = 1
+texture_normal = ExtResource("6_5npdm")
+ignore_texture_size = true
+stretch_mode = 0
+
+[connection signal="pressed" from="YesButton" to="." method="_on_yes_button_pressed"]
+[connection signal="pressed" from="NoButton" to="." method="_on_no_button_pressed"]

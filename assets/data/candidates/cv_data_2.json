@@ -1,0 +1,204 @@
+{
+  "candidates": [
+	{
+	  "id": "C001",
+	  "name": "Aaron Rivera",
+	  "photo": "res://assets/candidates/Aaron fine.png",
+	  "score": 80,
+	  "experience": [
+		{
+		  "role": "Actor",
+		  "genre": "Drama",
+		  "years": "2019-2021",
+		  "description": "Played a lead role in the critically acclaimed production 'City of Secrets,' showcasing emotional depth and versatility."
+		},
+		{
+		  "role": "Voice Actor",
+		  "genre": "Animation",
+		  "years": "2022-2023",
+		  "description": "Provided voiceover for the main character in the animated series 'Echoes of Light,' praised for expressive delivery."
+		}
+	  ],
+	  "funfact": [
+		"Has studied method acting for 5 years.",
+		"Taught improvisation workshops for young actors.",
+		"Occasionally performs spoken-word poetry."
+	  ]
+	},
+	{
+	  "id": "C002",
+	  "name": "Damian Laurent",
+	  "photo": "res://assets/candidates/Damian good.png",
+	  "score": 85,
+	  "experience": [
+		{
+		  "role": "Actor",
+		  "genre": "Fantasy",
+		  "years": "2018-2020",
+		  "description": "Played a wizard in the hit stage adaptation 'The Enchanted Grove,' winning Best Supporting Actor."
+		},
+		{
+		  "role": "Theater Director",
+		  "genre": "Drama",
+		  "years": "2021-2022",
+		  "description": "Directed the play 'A Solitary Mind,' lauded for its gripping narrative and compelling performances."
+		}
+	  ],
+	  "funfact": [
+		"Enjoys crafting costumes for stage performances.",
+		"Fluent in three languages, often takes multilingual roles.",
+		"Has trained in fencing for action scenes."
+	  ]
+	},
+	{
+	  "id": "C003",
+	  "name": "Diane Hargrove",
+	  "photo": "res://assets/candidates/diane evil.png",
+	  "score": 45,
+	  "experience": [
+		{
+		  "role": "Background Extra",
+		  "genre": "Crime Drama",
+		  "years": "2019",
+		  "description": "Uncredited background extra in 'Dark Streets,' appearing briefly in crowd scenes."
+		},
+		{
+		  "role": "Waitress",
+		  "genre": "Hospitality",
+		  "years": "2020-2021",
+		  "description": "Worked as a waitress at 'Sunny Diner,' unrelated to acting but claimed as a role-playing experience."
+		}
+	  ],
+	  "funfact": [
+		"Claims to have acted in multiple productions but offers no supporting references.",
+		"Frequently exaggerates skills in applications.",
+		"Confuses industry terms like 'monologue' and 'soliloquy.'"
+	  ]
+	},
+	{
+	  "id": "C004",
+	  "name": "Dondon Carter",
+	  "photo": "res://assets/candidates/dondon good.png",
+	  "score": 70,
+	  "experience": [
+		{
+		  "role": "Actor",
+		  "genre": "Comedy",
+		  "years": "2016-2018",
+		  "description": "Starred as the comedic lead in 'Laugh Out Loud,' praised for impeccable timing and humor."
+		},
+		{
+		  "role": "Improvisation Coach",
+		  "genre": "Comedy",
+		  "years": "2019-2021",
+		  "description": "Led workshops for aspiring comedians, focusing on quick thinking and audience engagement."
+		}
+	  ],
+	  "funfact": [
+		"Has a background in musical theater and plays the piano.",
+		"Often collaborates with other actors on creative projects.",
+		"Loves creating parody scripts in spare time."
+	  ]
+	},
+	{
+	  "id": "C005",
+	  "name": "Ellen Montgomery",
+	  "photo": "res://assets/candidates/ellen evil.png",
+	  "score": 35,
+	  "experience": [
+		{
+		  "role": "Social Media Influencer",
+		  "genre": "Fashion",
+		  "years": "2021-2022",
+		  "description": "Managed a small online fashion page with minimal acting relevance."
+		},
+		{
+		  "role": "Actor",
+		  "genre": "Mystery",
+		  "years": "2023",
+		  "description": "Claimed to star in 'The Hidden Path,' but the production does not appear to exist."
+		}
+	  ],
+	  "funfact": [
+		"Often boasts about non-existent achievements.",
+		"Inconsistent attendance at auditions and rehearsals.",
+		"Limited understanding of basic acting principles."
+	  ]
+	},
+	{
+	  "id": "C006",
+	  "name": "Jamie Patel",
+	  "photo": "res://assets/candidates/jamie fine.png",
+	  "score": 70,
+	  "experience": [
+		{
+		  "role": "Actor",
+		  "genre": "Romantic Comedy",
+		  "years": "2020-2022",
+		  "description": "Played a key supporting role in 'Love in the Park,' known for delivering heartfelt and relatable performances."
+		},
+		{
+		  "role": "Dramaturg",
+		  "genre": "Drama",
+		  "years": "2022-2023",
+		  "description": "Collaborated on script development for the play 'Fragments of Us,' ensuring narrative coherence."
+		}
+	  ],
+	  "funfact": [
+		"Has a degree in Theater Studies.",
+		"Enjoys volunteering to coach young actors.",
+		"Prefers intimate stage productions to large-scale performances."
+	  ]
+	},
+	{
+	  "id": "C007",
+	  "name": "Sashi Delacroix",
+	  "photo": "res://assets/candidates/Sashi evil.png",
+	  "score": 30,
+	  "experience": [
+		{
+		  "role": "Actor",
+		  "genre": "Horror",
+		  "years": "2017-2018",
+		  "description": "Played a minor role in 'Night of Shadows,' but struggled to maintain character consistency."
+		},
+		{
+		  "role": "Freelance Blogger",
+		  "genre": "Lifestyle",
+		  "years": "2019-2020",
+		  "description": "Wrote articles unrelated to acting, claiming the experience improved 'character development skills.'"
+		}
+	  ],
+	  "funfact": [
+		"Prefers solo work and avoids ensemble projects.",
+		"Often misses deadlines for role preparations.",
+		"Has inconsistent feedback from past directors."
+	  ]
+	},
+	{
+	  "id": "C008",
+	  "name": "Tina Al-Farouk",
+	  "photo": "res://assets/candidates/tina fine.png",
+	  "score": 75,
+	  "experience": [
+		{
+		  "role": "Actor",
+		  "genre": "Action",
+		  "years": "2021-2023",
+		  "description": "Played the lead in 'Steel Resolve,' known for performing her own stunts and captivating audiences."
+		},
+		{
+		  "role": "Choreographer",
+		  "genre": "Musical",
+		  "years": "2020-2021",
+		  "description": "Choreographed dance routines for 'Dance of Dreams,' praised for creativity and energy."
+		}
+	  ],
+	  "funfact": [
+		"Skilled in various martial arts.",
+		"Fluent in three languages, often plays international roles.",
+		"Passionate about mentoring aspiring stunt performers."
+	  ]
+	}
+  ]
+}

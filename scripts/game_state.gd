@@ -1,6 +1,8 @@
 extends Node
 
 signal day_complete(avg_score, views) 
+
+
 var cv_parser: CVParser 
 var candidate_scores = {}
 var chosen_candidates = []
