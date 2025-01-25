@@ -7,9 +7,14 @@ var typing_speed = 0.05
 var typing_timer = 0.0
 var current_char = 0
 
+
+func _init():
+	GameState.day_complete.connect(_on_day_complete)
+
 func _ready():
-	GameState.connect("day_complete", Callable(self, "_on_day_complete"))
-	set_text("The total views for today is 0")
+	await get_tree().create_timer(0.1).timeout
+	set_text("The total views for today is 0\nAverage score: 0.0")
+
 
 func _process(delta):
 	if current_char < target_text.length():
@@ -27,4 +32,8 @@ func set_text(new_text: String):
 	displayed_text = ""
 
 func _on_day_complete(avg_score, views):
-	set_text("Average: " + str(avg_score) + "%\nTotal Views: " + str(views))
+	print("PANEL: Received signal with score:", avg_score, " views:", views)
+	if views > 0:
+		var display_text = "The total views for today is " + str(views) + "\nAverage score: " + String("%.2f" % avg_score)
+		print("PANEL: Setting text to:", display_text)
+		set_text(display_text)
