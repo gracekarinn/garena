@@ -35,12 +35,14 @@ func _ready():
 	print("Node name:", name)
 
 func _on_timer_timeout():
-	print("Timer timeout - buttons visible:", yes_button.visible)
-	display_cv(current_candidate_id)
-	cv_overlay.visible = true
-	yes_button.visible = true
-	no_button.visible = true
-	print("After setting - buttons visible:", yes_button.visible)
+	var transitionview = get_node("/root/TransitionView")
+	var display_cv_callable = func():
+		display_cv(current_candidate_id)
+		cv_overlay.visible = true
+		yes_button.visible = true
+		no_button.visible = true
+	transitionview.fade_out_in(display_cv_callable)
+
 
 func display_cv(id: String):
 	name_label.text = "Name: " + cv_parser.get_candidate_name(id)
