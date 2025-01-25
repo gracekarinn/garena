@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 [gd_scene load_steps=12 format=3 uid="uid://cp6a12l546ynx"]
+=======
+[gd_scene load_steps=11 format=3 uid="uid://cp6a12l546ynx"]
+>>>>>>> 093d0b07517abdb594884ab835c72639697b9b47
 
 [ext_resource type="Texture2D" uid="uid://b3x5xnqva7g7r" path="res://assets/level-one/BG.png" id="1_mpwej"]
 [ext_resource type="Script" path="res://levels/day-two/day_two.gd" id="1_utwlj"]
@@ -9,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://cq7gja1v3ir0m" path="res://assets/button/yes.png" id="5_ppr5g"]
 [ext_resource type="Texture2D" uid="uid://b653vn6yecj85" path="res://assets/button/no.png" id="6_5npdm"]
 [ext_resource type="FontFile" uid="uid://cqt08qvej7fiw" path="res://assets/fonts/OCRAEXT.TTF" id="7_xs1gn"]
+[ext_resource type="AudioStream" uid="uid://dyt6uhtnqcpwm" path="res://assets/music/GARENA_Man_On_The_Inside.mp3" id="8_43l0u"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d8shb"]
 content_margin_left = 0.0
@@ -48,10 +53,46 @@ offset_right = 1280.0
 offset_bottom = 800.0
 texture = ExtResource("3_f2dtc")
 
+<<<<<<< HEAD
 [node name="CVBackground" type="TextureRect" parent="."]
 layout_mode = 0
 offset_right = 1280.0
 offset_bottom = 800.0
+=======
+[node name="Avatar" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="YesButton" type="TextureButton" parent="."]
+z_index = 5
+layout_mode = 0
+offset_left = 971.0
+offset_top = 488.0
+offset_right = 1251.0
+offset_bottom = 768.0
+mouse_filter = 1
+texture_normal = ExtResource("5_ppr5g")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="NoButton" type="TextureButton" parent="."]
+z_index = 5
+layout_mode = 0
+offset_left = 700.0
+offset_top = 488.0
+offset_right = 980.0
+offset_bottom = 768.0
+mouse_filter = 1
+texture_normal = ExtResource("6_5npdm")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="CVBackground" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+>>>>>>> 093d0b07517abdb594884ab835c72639697b9b47
 mouse_filter = 2
 texture = ExtResource("4_svtn8")
 
@@ -90,6 +131,7 @@ theme_override_fonts/font = ExtResource("7_xs1gn")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_uy3lf")
 scroll_fit_content_height = true
 
+<<<<<<< HEAD
 [node name="YesButton" type="TextureButton" parent="."]
 z_index = 5
 layout_mode = 0
@@ -116,3 +158,8 @@ stretch_mode = 0
 
 [connection signal="pressed" from="YesButton" to="." method="_on_yes_button_pressed"]
 [connection signal="pressed" from="NoButton" to="." method="_on_no_button_pressed"]
+=======
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_43l0u")
+autoplay = true
+>>>>>>> 093d0b07517abdb594884ab835c72639697b9b47
