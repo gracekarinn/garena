@@ -54,7 +54,7 @@
 	{
 	  "id": "C003",
 	  "name": "Dewi Hartono",
-	  "photo": "res://assets/candidates/photos/dewi_hartono.png",
+	  "photo": "res://assets/candidates/Abby.png",
 	  "score": 75,
 	  "experience": [
 		{
@@ -79,7 +79,7 @@
 	{
 	  "id": "C004",
 	  "name": "Bayu Setiadi",
-	  "photo": "res://assets/candidates/photos/bayu_setiadi.png",
+	  "photo": "res://assets/candidates/Dudu.png",
 	  "score": 55,
 	  "experience": [
 		{
@@ -104,7 +104,7 @@
 	{
 	  "id": "C005",
 	  "name": "Cindy Anggraini",
-	  "photo": "res://assets/candidates/photos/cindy_anggraini.png",
+	  "photo": "res://assets/candidates/hijabi.png",
 	  "score": 85,
 	  "experience": [
 		{

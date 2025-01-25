@@ -30,10 +30,6 @@ func get_candidate_name(id: String) -> String:
 	var cv = get_cv(id)
 	return cv.get("name", "")
 
-func get_candidate_photo(id: String) -> String:
-	var cv = get_cv(id)
-	return cv.get("photo", "")
-
 func get_experience(id: String) -> Array:
 	var cv = get_cv(id)
 	return cv.get("experience", [])
@@ -41,3 +37,7 @@ func get_experience(id: String) -> Array:
 func get_funfact(id: String) -> Array:
 	var cv = get_cv(id)
 	return cv.get("funfact", [])
+
+func get_candidate_photo(id: String) -> String:
+	var cv = get_cv(id)
+	return cv.get("photo", "")

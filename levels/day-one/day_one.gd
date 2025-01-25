@@ -35,8 +35,6 @@ func _ready():
 	timer.timeout.connect(_on_timer_timeout)
 	timer.start()
 	
-	yes_button.pressed.connect(_on_yes_button_pressed)
-	no_button.pressed.connect(_on_no_button_pressed)
 	
 	yes_button.z_index = 10
 	no_button.z_index = 10

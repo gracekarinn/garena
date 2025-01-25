@@ -1,16 +1,33 @@
-[gd_scene load_steps=4 format=3 uid="uid://drhmn7dxsopq"]
+[gd_scene load_steps=7 format=3 uid="uid://drhmn7dxsopq"]
 
 [ext_resource type="Texture2D" uid="uid://ci0njbyurwhbk" path="res://assets/level-one/day view laptop.png" id="1_xnb0j"]
+[ext_resource type="Script" path="res://levels/day-one/youtube_view.gd" id="2_ofkw7"]
 [ext_resource type="Texture2D" uid="uid://bxvoau8uj3a86" path="res://assets/candidates/IMG_2441.png" id="2_qy0eo"]
 [ext_resource type="FontFile" uid="uid://cqt08qvej7fiw" path="res://assets/fonts/OCRAEXT.TTF" id="3_4i3wh"]
 
-[node name="YoutubeView" type="TextureRect"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1ipnj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_75mwh"]
+bg_color = Color(0.693638, 0.731277, 0.64383, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.153317, 0.307443, 0.205519, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+corner_detail = 2
+
+[node name="YoutubeView" type="Panel"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_xnb0j")
+theme_override_styles/panel = SubResource("StyleBoxFlat_1ipnj")
+script = ExtResource("2_ofkw7")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
@@ -21,13 +38,39 @@ offset_bottom = 481.0
 texture = ExtResource("2_qy0eo")
 expand_mode = 1
 
-[node name="CurvedLabel" type="Node2D" parent="."]
+[node name="Textbox" type="CanvasLayer" parent="."]
 
-[node name="JudulLabel" type="Label" parent="CurvedLabel"]
-offset_left = 258.0
-offset_top = 495.0
-offset_right = 713.0
-offset_bottom = 519.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+[node name="MarginContainer" type="MarginContainer" parent="Textbox"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -234.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="Panel" type="Panel" parent="Textbox/MarginContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_75mwh")
+
+[node name="MarginContainer" type="MarginContainer" parent="Textbox/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Textbox/MarginContainer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
 theme_override_fonts/font = ExtResource("3_4i3wh")
-text = "Introducing Wida: The Next Star in Mipa Agency!"
+theme_override_font_sizes/font_size = 60
+vertical_alignment = 1
+
+[node name="Panel" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_xnb0j")

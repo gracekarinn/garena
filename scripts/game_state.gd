@@ -1,5 +1,8 @@
 extends Node
 
+
+signal day_complete(avg_score, views)
+
 var candidate_scores = {}
 var chosen_candidates = []
 var daily_averages = []
@@ -25,6 +28,10 @@ func record_choice(candidate_id: String, choice: bool):
 		print("\nDay complete!")
 		calculate_and_store_daily_average()
 		chosen_candidates.clear()
+		
+func calculate_views(scores: Array) -> int:
+	var avg = get_average(scores)
+	return int(avg * 1000000)
 
 func calculate_and_store_daily_average():
 	var final_scores = []
@@ -33,6 +40,8 @@ func calculate_and_store_daily_average():
 			final_scores.append(candidate_scores[candidate_id])
 	
 	var avg_score = get_average(final_scores)
+	var views = calculate_views(final_scores)  # Add this
+	emit_signal("day_complete", avg_score, views) 
 	daily_averages.append(avg_score)
 	print("Daily average: ", avg_score)
 	print("All daily averages: ", daily_averages)
