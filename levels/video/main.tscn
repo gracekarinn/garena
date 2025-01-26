@@ -1,0 +1,47 @@
+[gd_scene load_steps=4 format=3 uid="uid://7gjj6phwk7h2"]
+
+[ext_resource type="VideoStream" path="res://assets/videos/story.ogv" id="1_e5mke"]
+[ext_resource type="Script" path="res://levels/video/main.gd" id="1_vs2he"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7qj4o"]
+bg_color = Color(0.922404, 0.716701, 0.288826, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_vs2he")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("1_e5mke")
+autoplay = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.75, 0.75)
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 530.0
+offset_top = -499.0
+offset_right = 745.0
+offset_bottom = -436.0
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_7qj4o")
+text = "skip"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
