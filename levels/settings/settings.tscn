@@ -1,7 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://c18jo3cq1qe2t"]
+[gd_scene load_steps=8 format=3 uid="uid://c18jo3cq1qe2t"]
 
 [ext_resource type="Script" path="res://levels/settings/settings.gd" id="1_410xu"]
+[ext_resource type="Texture2D" uid="uid://bjkwws3pcgcxk" path="res://assets/homepage/bg-main-menu.png" id="2_78x5p"]
 [ext_resource type="AudioStream" uid="uid://dyt6uhtnqcpwm" path="res://assets/music/GARENA_Man_On_The_Inside.mp3" id="2_dtpat"]
+[ext_resource type="Shader" path="res://levels/menu/main_menu.gdshader" id="3_kn45f"]
+[ext_resource type="Texture2D" uid="uid://mtbg4qnns4xm" path="res://assets/homepage/clouds-main-menu.png" id="4_qnc1q"]
+[ext_resource type="FontFile" uid="uid://cv3umsy8a02sh" path="res://assets/fonts/GrapeSoda.ttf" id="5_3n252"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_l4drv"]
+shader = ExtResource("3_kn45f")
+shader_parameter/SPEED = 0.01
 
 [node name="Settings" type="Control"]
 layout_mode = 3
@@ -11,6 +19,18 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_410xu")
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 1280.0
+offset_bottom = 800.0
+texture = ExtResource("2_78x5p")
+
+[node name="Cloud" type="TextureRect" parent="."]
+material = SubResource("ShaderMaterial_l4drv")
+offset_right = 1396.0
+offset_bottom = 375.0
+texture = ExtResource("4_qnc1q")
+stretch_mode = 1
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -29,10 +49,13 @@ alignment = 1
 [node name="GridContainer" type="GridContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_constants/h_separation = 16
+theme_override_constants/v_separation = 20
 columns = 2
 
 [node name="MusicLabel" type="Label" parent="MarginContainer/VBoxContainer/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("5_3n252")
+theme_override_font_sizes/font_size = 30
 text = "Music"
 
 [node name="MusicSlider" type="HSlider" parent="MarginContainer/VBoxContainer/GridContainer"]
@@ -45,6 +68,8 @@ value = 1.0
 
 [node name="SoundEffectLabel" type="Label" parent="MarginContainer/VBoxContainer/GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("5_3n252")
+theme_override_font_sizes/font_size = 30
 text = "SFX"
 
 [node name="SFXSlider" type="HSlider" parent="MarginContainer/VBoxContainer/GridContainer"]

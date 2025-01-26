@@ -7,8 +7,7 @@ func _ready() -> void:
 
 
 func _on_start_pressed() -> void:
-	#get_tree().change_scene_to_file()
-	pass
+	get_tree().change_scene_to_file("res://levels/calendar/calendar.tscn")
 
 func _on_setting_pressed() -> void:
 	print("p")

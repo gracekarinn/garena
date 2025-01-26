@@ -1,10 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://drhmn7dxsopq"]
+[gd_scene load_steps=7 format=3 uid="uid://drhmn7dxsopq"]
 
 [ext_resource type="Texture2D" uid="uid://ci0njbyurwhbk" path="res://assets/level-one/day view laptop.png" id="1_xnb0j"]
 [ext_resource type="Script" path="res://levels/day-one/youtube_view.gd" id="2_ofkw7"]
 [ext_resource type="Texture2D" uid="uid://bxvoau8uj3a86" path="res://assets/candidates/IMG_2441.png" id="2_qy0eo"]
 [ext_resource type="FontFile" uid="uid://cqt08qvej7fiw" path="res://assets/fonts/OCRAEXT.TTF" id="3_4i3wh"]
-[ext_resource type="AudioStream" uid="uid://dyt6uhtnqcpwm" path="res://assets/music/GARENA_Man_On_The_Inside.mp3" id="5_m5crj"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1ipnj"]
 
@@ -75,7 +74,3 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_xnb0j")
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("5_m5crj")
-autoplay = true

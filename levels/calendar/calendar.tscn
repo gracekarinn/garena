@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=3 uid="uid://deyepalav414u"]
+
+[ext_resource type="Script" path="res://levels/calendar/calendar.gd" id="1_6txeu"]
+[ext_resource type="Texture2D" uid="uid://f16vehenb7q0" path="res://assets/homepage/IMG_2453.png" id="1_h4fbl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0jisk"]
+bg_color = Color(0.784361, 0.598665, 0.216062, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0.791999, 0.791999, 0.791999, 0.6)
+shadow_size = 4
+
+[node name="Calendar" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6txeu")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_h4fbl")
+expand_mode = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1028.0
+offset_top = 727.0
+offset_right = 1236.0
+offset_bottom = 773.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_0jisk")
+text = "Let's Start"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

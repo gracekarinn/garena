@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://by5c7jbvjbfvo"]
+[gd_scene load_steps=12 format=3 uid="uid://by5c7jbvjbfvo"]
 
 [ext_resource type="Texture2D" uid="uid://cq7gja1v3ir0m" path="res://assets/button/yes.png" id="1_1x1wr"]
 [ext_resource type="Script" path="res://levels/day-one/day_one.gd" id="1_24mqf"]
@@ -9,7 +9,6 @@
 [ext_resource type="Script" path="res://scripts/data/cv_parser.gd" id="2_gplpa"]
 [ext_resource type="Texture2D" uid="uid://dupcowoqhxurt" path="res://assets/level-one/CV.png" id="7_q2vtw"]
 [ext_resource type="FontFile" uid="uid://cqt08qvej7fiw" path="res://assets/fonts/OCRAEXT.TTF" id="9_prh1u"]
-[ext_resource type="AudioStream" uid="uid://dyt6uhtnqcpwm" path="res://assets/music/GARENA_Man_On_The_Inside.mp3" id="10_3ul2p"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qgxia"]
 content_margin_left = 0.0
@@ -126,10 +125,6 @@ mouse_filter = 1
 texture_normal = ExtResource("2_6gpym")
 ignore_texture_size = true
 stretch_mode = 0
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("10_3ul2p")
-autoplay = true
 
 [connection signal="pressed" from="YesButton" to="." method="_on_yes_button_pressed"]
 [connection signal="pressed" from="NoButton" to="." method="_on_no_button_pressed"]
