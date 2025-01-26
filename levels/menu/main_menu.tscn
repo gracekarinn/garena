@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://d043mnudjtxs6"]
+[gd_scene load_steps=14 format=3 uid="uid://d043mnudjtxs6"]
 
 [ext_resource type="FontFile" uid="uid://cv3umsy8a02sh" path="res://assets/fonts/GrapeSoda.ttf" id="1_0v31n"]
 [ext_resource type="Script" path="res://levels/menu/main_menu.gd" id="1_nvjhl"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://d3lgynla1d206" path="res://assets/homepage/play-button-stroke.png" id="8_sx67h"]
 [ext_resource type="Texture2D" uid="uid://bwglxkwdpj6o3" path="res://assets/homepage/settings.png" id="9_up3c4"]
 [ext_resource type="Texture2D" uid="uid://djelpkqd8r11q" path="res://assets/homepage/settings-button-stroke.png" id="10_vyh72"]
+[ext_resource type="AudioStream" uid="uid://dyt6uhtnqcpwm" path="res://assets/music/GARENA_Man_On_The_Inside.mp3" id="11_wv4dg"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hg2fx"]
 bg_color = Color(1, 1, 1, 1)
@@ -120,12 +121,17 @@ texture_normal = ExtResource("7_5ox2o")
 texture_hover = ExtResource("8_sx67h")
 
 [node name="Setting" type="TextureButton" parent="Logo"]
+layout_mode = 0
 offset_left = 646.0
 offset_top = 339.0
 offset_right = 1018.0
 offset_bottom = 404.0
 texture_normal = ExtResource("9_up3c4")
 texture_hover = ExtResource("10_vyh72")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_wv4dg")
+autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_settings_pressed"]
