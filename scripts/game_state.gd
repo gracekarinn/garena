@@ -41,7 +41,6 @@ func calculate_and_store_daily_average():
 	print("Calculated average: ", avg_score)
 	daily_averages.append(avg_score)
 	var views = calculate_views(final_scores)
-	emit_signal("day_complete", avg_score, views)
 func calculate_views(scores: Array) -> int:
 	var avg = get_average(scores)
 	return int(avg * 1000000)
